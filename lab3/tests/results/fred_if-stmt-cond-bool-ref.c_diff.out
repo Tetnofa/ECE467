@@ -1,0 +1,12 @@
+0a1,11
+> Program [useIO=0](1,0)
+> 	Function[isProto=0]	Int(1,0)
+> 		Identifier[name:f1](1,4)
+> 		Scope(1,9)
+> 			Scalar Declaration			Bool(2,2)
+> 				Identifier[name:b](2,7)
+> 			IfStmt[hasElse=0](3,2)
+> 				Int Expression(5,2)
+> 					Reference(5,2)
+> 						Identifier[name:b](5,2)
+> 				Scope(6,4)

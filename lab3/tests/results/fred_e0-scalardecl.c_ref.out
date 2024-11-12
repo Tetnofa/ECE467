@@ -1,0 +1,23 @@
+Program [useIO=0](1,0)
+	Scalar Declaration	Int(1,0)
+		Identifier[name:x](1,4)
+	Scalar Declaration	Int(2,0)
+		Identifier[name:x](2,4)
+	Function[isProto=0]	Void(4,0)
+		Identifier[name:foo](4,5)
+		Scope(4,11)
+			Scalar Declaration			Int(5,2)
+				Identifier[name:y](5,6)
+			Scalar Declaration			Int(6,2)
+				Identifier[name:y](6,6)
+			WhileStmt(8,2)
+				Int Expression(8,9)
+					BoolConstant[val=1](8,9)
+				Scope(8,15)
+					Scalar Declaration					Int(9,4)
+						Identifier[name:z](9,8)
+					Scalar Declaration					Int(10,4)
+						Identifier[name:z](10,8)
+sema: 2:0 : redefinition of x
+sema: 6:2 : redefinition of y
+sema: 10:4 : redefinition of z

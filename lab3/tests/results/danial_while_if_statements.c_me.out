@@ -1,0 +1,23 @@
+sema: 12:24 : use of undefined identifier z
+sema: 13:28 : use of undefined identifier z
+sema: 13:24 : invalid condition in if statement
+sema: 12:20 : invalid condition in if statement
+sema: 23:12 : use of undefined identifier x
+sema: 23:8 : type mismatch 
+sema: 23:4 : invalid condition in if statement
+sema: 29:12 : use of undefined identifier x
+sema: 29:8 : invalid condition in if statement
+sema: 43:24 : use of undefined identifier y
+sema: 43:15 : type mismatch 
+sema: 43:11 : invalid condition in if statement
+sema: 51:11 : use of undefined identifier x
+sema: 51:4 : invalid condition in while statement
+sema: 54:11 : use of undefined identifier y
+sema: 56:19 : use of undefined identifier x
+sema: 57:20 : use of undefined identifier f
+sema: 62:36 : invalid condition in while statement
+sema: 57:16 : invalid condition in if statement
+sema: 56:12 : invalid condition in while statement
+sema: 54:4 : invalid condition in while statement
+sema: 76:4 : invalid condition in while statement
+sema: 86:4 : invalid condition in while statement

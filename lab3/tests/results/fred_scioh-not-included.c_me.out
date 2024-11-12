@@ -1,0 +1,17 @@
+sema: 9:6 : use of undefined identifier readInt
+sema: 9:2 : type mismatch 
+sema: 10:6 : use of undefined identifier readInt
+sema: 10:2 : type mismatch 
+sema: 11:7 : use of undefined identifier readBool
+sema: 11:2 : type mismatch 
+sema: 12:7 : use of undefined identifier readBool
+sema: 12:2 : type mismatch 
+sema: 15:2 : use of undefined identifier writeInt
+sema: 16:2 : use of undefined identifier writeInt
+sema: 17:2 : use of undefined identifier writeBool
+sema: 18:2 : use of undefined identifier writeBool
+sema: 21:2 : use of undefined identifier newLine
+sema: 24:11 : use of undefined identifier readInt
+sema: 24:2 : use of undefined identifier writeInt
+sema: 25:12 : use of undefined identifier readBool
+sema: 25:2 : use of undefined identifier writeBool

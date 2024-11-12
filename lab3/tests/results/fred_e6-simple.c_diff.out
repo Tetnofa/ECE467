@@ -1,0 +1,12 @@
+0a1,11
+> Program [useIO=0](1,0)
+> 	Function[isProto=0]	Int(1,0)
+> 		Identifier[name:main](1,4)
+> 		Scope(1,11)
+> 			Expression Statement(2,2)
+> 				Bool Expression(2,2)
+> 					Binary Expression[opcode:&&](2,2)
+> 						Int Expression(2,2)
+> 							BoolConstant[val=1](2,2)
+> 						Int Expression(2,10)
+> 							BoolConstant[val=0](2,10)

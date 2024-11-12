@@ -1,0 +1,6 @@
+sema: 64:6 : use of undefined identifier b
+sema: 64:4 : invalid use of identifier e
+sema: 64:6 : type mismatch 
+sema: 66:4 : use of undefined identifier c
+sema: 66:6 : use of undefined identifier b
+sema: 66:6 : type mismatch 

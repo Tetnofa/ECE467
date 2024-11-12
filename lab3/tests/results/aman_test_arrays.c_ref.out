@@ -1,0 +1,5 @@
+line 2:3 no viable alternative at input 'int['
+line 14:16 no viable alternative at input 'intsumArray(int['
+line 17:4 extraneous input 'sum' expecting {<EOF>, 'bool', 'int', 'void'}
+cannot print AST with parse errors
+cannot perform semantic checks with parse errors

@@ -1,0 +1,2 @@
+sema: 1:0 : size cannot be negative for array arr1
+sema: 3:0 : size cannot be negative for array arr3

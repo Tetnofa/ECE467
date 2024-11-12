@@ -1,0 +1,26 @@
+sema: 11:4 : no matching definition for fcn
+sema: 12:4 : use of undefined identifier fcn2
+sema: 13:4 : no matching definition for test
+sema: 13:4 : no matching definition for test
+sema: 15:4 : no matching definition for test
+sema: 15:4 : no matching definition for test
+sema: 15:4 : no matching definition for test
+sema: 16:8 : use of undefined identifier a
+sema: 16:11 : use of undefined identifier b
+sema: 16:14 : use of undefined identifier c
+sema: 16:4 : no matching definition for pee
+sema: 16:4 : no matching definition for pee
+sema: 16:4 : no matching definition for pee
+sema: 17:8 : use of undefined identifier a
+sema: 17:11 : use of undefined identifier b
+sema: 17:14 : use of undefined identifier c
+sema: 17:4 : no matching definition for yee
+sema: 17:4 : no matching definition for yee
+sema: 17:4 : no matching definition for yee
+sema: 18:4 : use of undefined identifier feet
+sema: 21:4 : use of undefined identifier a
+sema: 21:8 : use of undefined identifier b
+sema: 21:4 : type mismatch 
+sema: 23:0 : definition inconsistent with earlier definition of pee
+sema: 24:4 : use of undefined identifier v
+sema: 24:4 : type mismatch 

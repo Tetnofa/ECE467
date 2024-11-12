@@ -1,0 +1,8 @@
+sema: 5:0 : redefinition of main
+sema: 8:0 : redefinition of main
+sema: 11:0 : redefinition of main
+sema: 15:0 : definition inconsistent with earlier definition of helper1
+sema: 24:0 : definition inconsistent with earlier definition of f
+sema: 30:0 : redefinition of poo
+sema: 33:0 : redefinition of poo
+sema: 36:0 : redefinition of poo

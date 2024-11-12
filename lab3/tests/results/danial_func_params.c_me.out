@@ -1,0 +1,4 @@
+sema: 18:4 : type mismatch 
+sema: 21:4 : use of undefined identifier f
+sema: 21:4 : type mismatch 
+sema: 28:4 : no matching definition for fcn2

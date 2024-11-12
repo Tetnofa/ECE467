@@ -1,0 +1,2 @@
+sema: 3:0 : definition inconsistent with earlier definition of wrong_return
+sema: 7:0 : definition inconsistent with earlier definition of wrong_arg_type

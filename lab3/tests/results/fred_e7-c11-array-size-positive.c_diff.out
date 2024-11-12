@@ -1,0 +1,8 @@
+0a1,7
+> Program [useIO=0](1,0)
+> 	Array Declaration	Int*(1,0)
+> 		Identifier[name:arr1](1,4)
+> 	Array Declaration	Int[1](2,0)
+> 		Identifier[name:arr2](2,4)
+> 	Array Declaration	Int[-1](3,0)
+> 		Identifier[name:arr3](3,4)

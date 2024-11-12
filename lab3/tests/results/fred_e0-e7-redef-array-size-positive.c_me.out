@@ -1,0 +1,2 @@
+sema: 2:0 : redefinition of a1
+sema: 4:0 : size cannot be negative for array a2

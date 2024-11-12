@@ -1,0 +1,3 @@
+sema: 19:13 : no matching definition for func2
+sema: 19:4 : type mismatch 
+sema: 20:4 : use of undefined identifier writeInt

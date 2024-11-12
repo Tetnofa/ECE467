@@ -1,0 +1,5 @@
+KYWD=1
+BOOL=2
+NUM=3
+ID=4
+WS=5

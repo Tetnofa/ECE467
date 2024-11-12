@@ -1,0 +1,11 @@
+sema: 34:2 : type mismatch 
+sema: 35:2 : type mismatch 
+sema: 37:2 : no matching definition for writeInt
+sema: 38:2 : no matching definition for writeBool
+sema: 41:2 : no matching definition for writeInt
+sema: 42:2 : no matching definition for writeBool
+sema: 45:2 : no matching definition for writeInt
+sema: 46:2 : no matching definition for writeBool
+sema: 49:2 : no matching definition for writeInt
+sema: 50:2 : no matching definition for writeBool
+sema: 53:2 : no matching definition for newLine

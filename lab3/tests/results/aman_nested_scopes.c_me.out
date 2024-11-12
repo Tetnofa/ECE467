@@ -1,0 +1,4 @@
+sema: 13:16 : use of undefined identifier writeInt
+sema: 15:12 : use of undefined identifier writeBool
+sema: 17:8 : use of undefined identifier writeInt
+sema: 20:4 : use of undefined identifier writeInt

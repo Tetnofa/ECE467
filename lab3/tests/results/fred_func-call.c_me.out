@@ -1,0 +1,16 @@
+sema: 53:2 : no matching definition for func1
+sema: 54:2 : no matching definition for func2
+sema: 55:2 : no matching definition for func3
+sema: 55:2 : no matching definition for func3
+sema: 56:2 : no matching definition for func4
+sema: 57:2 : no matching definition for func5
+sema: 58:2 : no matching definition for func6
+sema: 59:2 : no matching definition for func7
+sema: 60:2 : no matching definition for func8
+sema: 60:2 : no matching definition for func8
+sema: 61:2 : no matching definition for func1
+sema: 62:2 : no matching definition for func3
+sema: 63:2 : no matching definition for func7
+sema: 64:2 : no matching definition for func8
+sema: 65:2 : no matching definition for func1
+sema: 66:2 : no matching definition for func4

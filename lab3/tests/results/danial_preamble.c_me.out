@@ -1,0 +1,6 @@
+sema: 5:4 : no matching definition for writeBool
+sema: 11:4 : no matching definition for readBool
+sema: 12:4 : no matching definition for readInt
+sema: 13:4 : no matching definition for writeBool
+sema: 14:4 : no matching definition for writeInt
+sema: 15:4 : no matching definition for newLine

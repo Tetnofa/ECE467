@@ -1,0 +1,7 @@
+Program [useIO=0](1,0)
+	Function[isProto=0]	Int(1,0)
+		Identifier[name:main](1,4)
+		Scope(1,11)
+			Expression Statement(2,2)
+				Int Expression(2,3)
+					IntConstant[val=1](2,3)

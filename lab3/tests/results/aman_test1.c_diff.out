@@ -1,0 +1,37 @@
+0a1,31
+> Program [useIO=0](61,0)
+> 	Function[isProto=0]	Int(61,0)
+> 		Identifier[name:temp](61,4)
+> 		Parameter		Int(61,9)
+> 			Identifier[name:a](61,13)
+> 		Scope(61,15)
+> 			Array Declaration			Int[5](62,4)
+> 				Identifier[name:d](62,8)
+> 			Scalar Declaration			Int(63,4)
+> 				Identifier[name:e](63,8)
+> 			Expression Statement(64,4)
+> 				Int Expression(64,4)
+> 					Reference(64,4)
+> 						Identifier[name:e](64,4)
+> 						Int Expression(64,6)
+> 							Reference(64,6)
+> 								Identifier[name:b](64,6)
+> 			Expression Statement(65,4)
+> 				Int Expression(65,4)
+> 					Reference(65,4)
+> 						Identifier[name:d](65,4)
+> 						Int Expression(65,6)
+> 							Reference(65,6)
+> 								Identifier[name:e](65,6)
+> 			Expression Statement(66,4)
+> 				Int Expression(66,4)
+> 					Reference(66,4)
+> 						Identifier[name:c](66,4)
+> 						Int Expression(66,6)
+> 							Reference(66,6)
+> 								Identifier[name:b](66,6)
+3a35,36
+> sema: 64:6 : use of undefined identifier b
+> sema: 66:6 : use of undefined identifier b
+6d38
+< sema: 66:6 : type mismatch 

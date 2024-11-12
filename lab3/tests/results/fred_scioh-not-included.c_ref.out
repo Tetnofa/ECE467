@@ -1,0 +1,92 @@
+Program [useIO=0](2,0)
+	Scalar Declaration	Int(2,0)
+		Identifier[name:x](2,4)
+	Scalar Declaration	Int(3,0)
+		Identifier[name:y](3,4)
+	Scalar Declaration	Bool(4,0)
+		Identifier[name:b1](4,5)
+	Scalar Declaration	Bool(5,0)
+		Identifier[name:b2](5,5)
+	Function[isProto=0]	Void(7,0)
+		Identifier[name:f1](7,5)
+		Scope(7,10)
+			Assignment(9,2)
+				Reference(9,2)
+					Identifier[name:x](9,2)
+				CallExpr(9,6)
+					Identifier[name:readInt](9,6)
+			Assignment(10,2)
+				Reference(10,2)
+					Identifier[name:y](10,2)
+				CallExpr(10,6)
+					Identifier[name:readInt](10,6)
+			Assignment(11,2)
+				Reference(11,2)
+					Identifier[name:b1](11,2)
+				CallExpr(11,7)
+					Identifier[name:readBool](11,7)
+			Assignment(12,2)
+				Reference(12,2)
+					Identifier[name:b2](12,2)
+				CallExpr(12,7)
+					Identifier[name:readBool](12,7)
+			Expression Statement(15,2)
+				CallExpr(15,2)
+					Identifier[name:writeInt](15,2)
+					Argument(15,11)
+						Int Expression(15,11)
+							Reference(15,11)
+								Identifier[name:x](15,11)
+			Expression Statement(16,2)
+				CallExpr(16,2)
+					Identifier[name:writeInt](16,2)
+					Argument(16,11)
+						Int Expression(16,11)
+							Reference(16,11)
+								Identifier[name:y](16,11)
+			Expression Statement(17,2)
+				CallExpr(17,2)
+					Identifier[name:writeBool](17,2)
+					Argument(17,12)
+						Int Expression(17,12)
+							Reference(17,12)
+								Identifier[name:b1](17,12)
+			Expression Statement(18,2)
+				CallExpr(18,2)
+					Identifier[name:writeBool](18,2)
+					Argument(18,12)
+						Int Expression(18,12)
+							Reference(18,12)
+								Identifier[name:b2](18,12)
+			Expression Statement(21,2)
+				CallExpr(21,2)
+					Identifier[name:newLine](21,2)
+			Expression Statement(24,2)
+				CallExpr(24,2)
+					Identifier[name:writeInt](24,2)
+					Argument(24,11)
+						CallExpr(24,11)
+							Identifier[name:readInt](24,11)
+			Expression Statement(25,2)
+				CallExpr(25,2)
+					Identifier[name:writeBool](25,2)
+					Argument(25,12)
+						CallExpr(25,12)
+							Identifier[name:readBool](25,12)
+sema: 9:6 : use of undefined identifier readInt
+sema: 9:2 : type mismatch 
+sema: 10:6 : use of undefined identifier readInt
+sema: 10:2 : type mismatch 
+sema: 11:7 : use of undefined identifier readBool
+sema: 11:2 : type mismatch 
+sema: 12:7 : use of undefined identifier readBool
+sema: 12:2 : type mismatch 
+sema: 15:2 : use of undefined identifier writeInt
+sema: 16:2 : use of undefined identifier writeInt
+sema: 17:2 : use of undefined identifier writeBool
+sema: 18:2 : use of undefined identifier writeBool
+sema: 21:2 : use of undefined identifier newLine
+sema: 24:11 : use of undefined identifier readInt
+sema: 24:2 : use of undefined identifier writeInt
+sema: 25:12 : use of undefined identifier readBool
+sema: 25:2 : use of undefined identifier writeBool

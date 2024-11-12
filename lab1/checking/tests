@@ -1,0 +1,150 @@
+begin the sequence and end the operation.
+MyVar1 is greater than myVar2 but less than MyVar3.
+True facts are sometimes more complicated than False statements.
+The variable x_1 equals 123 but x_2 equals 456.
+Does the keyword begin trigger an action?
+Set my_variable_123 to true and check if it's equal to false.
+In this program, begin and end are essential keywords.
+Can you tell if _hiddenVar is equal to var_Visible123?
+Variable names like starts_with_true should not confuse the lexer.
+What happens if var123 is followed by var_456 in the same line?
+Keywords such as begin and end should be handled separately.
+The boolean true was set but the identifier true_value isn't the same.
+end_of_file and endOfProgram are two different identifiers.
+Does this number 000123 get parsed correctly, or will it fail?
+TrueFalseBool is not the same as true or false.
+var_name_100 is an identifier, but 100var is invalid.
+beginTest123 should not be confused with the keyword begin.
+Why does 0123 throw an error when 123 is valid?
+If a number like 987654 is entered, it should be recognized.
+The identifier Final_123 must not be mistaken for a number.
+This_identifier_contains_underscores_and_digits_789.
+Is trueish a boolean or just an identifier?
+Look at variable _starts_with_underscore and ends_with_1.
+Will the lexer recognize ends123 and start_var as valid IDs?
+Leading zeros in numbers like 000 should not pass.
+begin123_test and end123_test are identifiers, not keywords.
+ID_TrueFalse should not be confused with boolean true or false.
+abc123_def456 is a valid identifier with mixed numbers.
+The number 123abc is an invalid identifier starting with digits.
+underscore_start__ID and ID_underscore_end__ are tricky cases.
+True_and_false_booleans must be handled separately from IDs.
+What happens when you mix 1000000 with variable_name123?
+The variable name begins_with_keyword_begin should be valid.
+Don't confuse _trueID with the boolean constant true.
+Final_Var_123 is not a reserved keyword like begin or end.
+Why does 0000 fail but 99999 pass in this sequence?
+Underscores can start or end IDs like __varName or varName__.
+trueBoolean123 is not the same as the boolean value true.
+ID_with_123_digits must be handled as an identifier.
+Numbers like 012345 are invalid due to the leading zero.
+FalseOrTrue is a variable, not a boolean constant.
+Ending_with_123 and leading_with_underscore__ should be parsed.
+trueisFalse is not a valid boolean but rather an identifier.
+var_TrueFalse123 should be recognized as an ID.
+Keywords begin, end, true, and false must not conflict with IDs.
+_Leading_underscore_ and trailing_underscore_ are valid cases.
+ID_mixed_case_ABC123 must be recognized correctly.
+Why does 000123 lead to an error while 123456 passes?
+ID_var_name_999 and varName123 should be valid identifiers.
+What if beginEndTest contains both keywords in an ID?
+Boolean variables true_value and false_value should not conflict.
+Numbers like 100000 should be parsed separately from IDs.
+Why does the identifier start_with_True conflict with true?
+False_and_true_as_IDs must be distinguished from booleans.
+Does var_123 and _var456 follow the identifier rules?
+123abc_var should fail due to starting with a digit.
+begin_var123 and end_var123 should not be treated as keywords.
+trueishVariable and falsehoodTest are valid IDs.
+Is __begin123 a valid identifier or a reserved keyword conflict?
+Numbers starting with leading zeroes like 000123 are invalid.
+Mixing boolean true with identifier trueVar should be handled.
+Keywords should be parsed as KYWD, not part of an identifier.
+Trailing underscores in IDs like var_ and var__ must be accepted.
+Does FalseOrTrue behave like an identifier or booleans?
+Ensure var100 is parsed as an identifier and 100 as a number.
+Can a string like trueFalse123 be an ID, or does it conflict?
+Why does 0123 fail while 123 succeeds in number parsing?
+begin_and_end_with_keywords is a tricky case for reserved words.
+Trailing_digits_9999 in an ID should not confuse the parser.
+TrueFalseTest should not conflict with boolean constants.
+Mixing digits and letters like abc123def in an ID is valid.
+False_Boolean_Test and true_test_var are valid identifiers.
+Can this identifier: _underscore_test be parsed correctly?
+Test a mix of True_and_False with regular identifiers.
+The sequence 123_variable should be invalid due to the number start.
+begin_varTrue and end_varFalse should be parsed as IDs.
+Does TrueVariableName conflict with the boolean constant true?
+Numbers like 999999999 should be handled as NUM, not ID.
+True_and_false_keywords_in_ID must be parsed as IDs, not booleans.
+Leading_zero_in_number_00001 should result in a failure.
+Does finalTestVar_100 conflict with reserved keywords?
+Mixed_case_and_numbers_123 should be parsed as an identifier.
+Keywords like begin and end must not interfere with variable names.
+Invalid_numbers_0123 should throw errors, but 123 should not.
+VarTrueFalse123 is an identifier with digits and booleans in it.
+Mixing keywords and identifiers like begin123 should work fine.
+Leading_underscore_in_var should not conflict with identifiers.
+Valid identifiers include myVar_123 and another_Var_456.
+The test should parse 12345_num as a valid identifier.
+Boolean tests include varTrue and varFalse, not actual booleans.
+LeadingZerosInNumbers_000123 must be invalid per the grammar.
+true_and_false_in_mixed_case must be parsed as identifiers.
+InvalidNumber_01234 should be rejected, but 123456 should not.
+Use underscores in identifiers like var_123_but_not_numbers.
+Mix boolean constants true and false in various contexts.
+Leading zeros in numbers like 00001 should cause an error.
+MixedCaseVariablesLikeThis123 should be valid as an identifier.
+Handle trailing_underscore_ in var names like var_ and var__.
+Does _var123 and var_123 pass the identifier rules?
+The string begins with begin123 and ends with end123 as IDs.
+Numbers like 123456789 should be parsed as valid NUM tokens.
+Handle keywords mixed with variables like begin123_var.
+Keywords such as end and begin must not interfere with identifiers.
+Numbers in variables like var123 and var456 should be valid IDs.
+Handle identifiers with True_and_False keywords inside.
+Does trailing_underscore_ at the end of an ID cause problems?
+Final_var_test_123 and _leading_underscore in ID must be valid.
+ID_with_digits_123456 should be recognized as an identifier.
+Boolean values true_false should be identifiers, not constants.
+What happens with var_True and varFalse in a mixed context?
+Keywords beginTest and endTest should not trigger reserved words.
+Numbers like 99999 must be parsed as NUM and not mistaken for ID.
+Handling identifiers like TrueTest and False123 is crucial.
+Numbers mixed with letters in var100abc should be a valid ID.
+Leading zeros in numbers like 0123 should be rejected.
+Trailing_underscore_in_var__ should not cause lexer issues.
+The identifier var_mixed_case_123456 is a valid variable name.
+Keywords like true and false must be separate from identifiers.
+Identifiers beginning_with_keyword_begin should be recognized.
+Handle mixed_case_with_digits_123456 as a valid identifier.
+This test should check var123 mixed with boolean constants.
+The identifier var123456789 should be parsed as a valid ID.
+Handle underscore__before_and_after__as_valid_in_var_names.
+What happens when an identifier is followed by begin and end?
+Mix identifiers like var123 with numbers and booleans.
+The sequence begins_with_true_and_ends_with_false must work.
+Is this identifier TrueFalseBooleans parsed correctly?
+Handle final_var_123456 and final_var_with_digits as IDs.
+Trailing_zeros_in_numbers_like_00001 should be invalid.
+Keywords like begin and end should not interfere with identifiers.
+Test variable names like var1 and var2 in the same context.
+Does this sequence _underscore_var cause issues with parsing?
+Handle variable names like Final_Var123 with trailing digits.
+Trailing_underscore__in_var_name__ should not throw errors.
+This test case handles TrueFalseBooleans in a mixed context.
+Test the identifier begin123456 mixed with digits.
+Handle varTrueFalse123 and var_with_true_and_false_keywords.
+Leading zeros in numbers like 012345 must fail as per rules.
+Trailing_underscore_in_var123 must be handled as valid.
+Test mixed_case_identifiers like Var_123_and_Var_456.
+Handle boolean constants mixed with identifiers like varTrue.
+Does this identifier: _start_with_underscore parse correctly?
+Handle final_test_var_100 and test_var_999 as valid identifiers.
+Boolean constants true_false should not interfere with identifiers.
+The identifier starts_with_true_and_ends_with_false must pass.
+Trailing zeros in numbers like 000001 must cause an error.
+Does var_12345 and _var6789 pass the identifier test?
+Test mixed case identifiers like finalVar_TrueFalseBooleans.
+Leading_zeros_in_numbers like 000123 should not pass as NUM.
+Handle underscore in identifiers like var__test__name_123.

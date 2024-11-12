@@ -1,0 +1,53 @@
+Submitting assignment 3 from ug156
+Checking for the expected files in the current directory
+smallC.g4 A3Sema.cpp SemanticAnalyzer.h SemanticAnalyzer.cpp SymTable.h SymTable.cpp
+Attempting to build your code.  Make output follows:
+==================================================================
+java -jar /cad2/ece467f/ANTLR-4.7.2/antlr-4.7.2-complete.jar -no-listener -visitor -Dlanguage=Cpp  smallC.g4
+g++  -std=c++17 -w -c -I/cad2/ece467f/ANTLR-4.7.2/include/antlr4-runtime/ -o A3Sema.o A3Sema.cpp
+g++  -std=c++17 -w -c -I/cad2/ece467f/ANTLR-4.7.2/include/antlr4-runtime/ -o ASTVisitorBase.o ASTVisitorBase.cpp
+g++  -std=c++17 -w -c -I/cad2/ece467f/ANTLR-4.7.2/include/antlr4-runtime/ -o ASTPrinter.o ASTPrinter.cpp
+g++  -std=c++17 -w -c -I/cad2/ece467f/ANTLR-4.7.2/include/antlr4-runtime/ -o SymTable.o SymTable.cpp
+g++  -std=c++17 -w -c -I/cad2/ece467f/ANTLR-4.7.2/include/antlr4-runtime/ -o SemanticAnalyzer.o SemanticAnalyzer.cpp
+g++  -std=c++17 -w -c -I/cad2/ece467f/ANTLR-4.7.2/include/antlr4-runtime/ -o smallCLexer.o smallCLexer.cpp
+g++  -std=c++17 -w -c -I/cad2/ece467f/ANTLR-4.7.2/include/antlr4-runtime/ -o smallCParser.o smallCParser.cpp
+g++  -std=c++17 -w -c -I/cad2/ece467f/ANTLR-4.7.2/include/antlr4-runtime/ -o smallCBaseVisitor.o smallCBaseVisitor.cpp
+g++  -std=c++17 -w -c -I/cad2/ece467f/ANTLR-4.7.2/include/antlr4-runtime/ -o smallCVisitor.o smallCVisitor.cpp
+g++  -std=c++17 -w -I/cad2/ece467f/ANTLR-4.7.2/include/antlr4-runtime/ -L/cad2/ece467f/ANTLR-4.7.2/lib A3Sema.o ASTVisitorBase.o ASTPrinter.o SymTable.o SemanticAnalyzer.o ASTNodes.o \
+          smallCLexer.o smallCParser.o smallCBaseVisitor.o smallCVisitor.o -o A3Sema -lantlr4-runtime
+------------------------------------------------------------------
+The build appears to have been successful
+
+Running exercise on the produced executable 'A3Sema'
+############### Testcase 1 Results ##########################
+Functionality: PASS - Output matches solution version 1
+############### Testcase 2 Results ##########################
+Functionality: PASS - Output matches solution version 1
+############### Testcase 3 Results ##########################
+Functionality: PASS - Output matches solution version 1
+############### Testcase 4 Results ##########################
+Functionality: PASS - Output matches solution version 1
+############### Testcase 5 Results ##########################
+Functionality: PASS - Output matches solution version 1
+################# Summary for 5 test(s) #####################
+Functionality: PASS: All tests passed
+
+The required files passed exercise
+
+Submitting files
+
+Verifying submission
+submitece467f -l 3
+total 8
+-rw-r----- 1 tester tutor  2884 Nov  6 11:22 A3Sema.cpp
+-rw-r----- 1 tester tutor 18556 Nov  6 11:22 SemanticAnalyzer.cpp
+-rw-r----- 1 tester tutor  3687 Nov  6 11:22 SemanticAnalyzer.h
+-rw-r----- 1 tester tutor 16459 Nov  6 11:22 smallC.g4
+-rw-r----- 1 tester tutor  2755 Nov  6 11:22 submit_log.1106112214
+-rw-r----- 1 tester tutor  2695 Nov  6 11:22 SymTable.cpp
+-rw-r----- 1 tester tutor  1694 Nov  6 11:22 SymTable.h
+
+All filesizes match. All timestamps match submission time.
+
+Submission was successful
+

@@ -1,0 +1,11 @@
+0a1,10
+> Program [useIO=0](1,0)
+> 	Function[isProto=1]	Void(1,0)
+> 		Identifier[name:f1](1,5)
+> 		Parameter		Int*(1,8)
+> 			Identifier[name:arr](1,12)
+> 	Function[isProto=0]	Void(3,0)
+> 		Identifier[name:f1](3,5)
+> 		Parameter		Int*(3,8)
+> 			Identifier[name:arr](3,12)
+> 		Scope(3,19)

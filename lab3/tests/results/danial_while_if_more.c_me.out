@@ -1,0 +1,4 @@
+sema: 6:52 : type mismatch 
+sema: 6:12 : type mismatch 
+sema: 6:8 : invalid condition in if statement
+sema: 3:4 : invalid condition in while statement

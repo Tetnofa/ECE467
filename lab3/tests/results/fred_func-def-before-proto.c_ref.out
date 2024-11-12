@@ -1,0 +1,8 @@
+Program [useIO=0](1,0)
+	Function[isProto=0]	Void(1,0)
+		Identifier[name:func](1,5)
+		Scope(1,12)
+			ReturnStmt(2,2)
+	Function[isProto=1]	Void(4,0)
+		Identifier[name:func](4,5)
+sema: 4:0 : redefinition of func

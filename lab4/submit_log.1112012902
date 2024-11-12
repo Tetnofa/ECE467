@@ -1,0 +1,17 @@
+Submitting assignment 4 from ug156
+Checking for the expected files in the current directory
+smallC.g4 A4Gen.cpp ASTNodes.h ASTNodes.o SemanticAnalyzer.h SemanticAnalyzer.o SymTable.h SymTable.o IRGen.h IRGen.cpp
+Attempting to build your code.  Make output follows:
+==================================================================
+java -jar /cad2/ece467f/ANTLR-4.7.2/antlr-4.7.2-complete.jar -no-listener -visitor -Dlanguage=Cpp  smallC.g4
+g++  -std=c++17 -w -c -I/cad2/ece467f/ANTLR-4.7.2/include/antlr4-runtime/ -I/cad2/ece467f/llvm-project/llvm/include -I/cad2/ece467f/llvm-project/build/include -o A4Gen.o A4Gen.cpp
+------------------------------------------------------------------
+The build appears to have failed.  See the make output for
+more information about the details of the error.
+------------------------------------------------------------------
+This assignment did not compile.
+It will not receive any functionality marks but will still be marked for style.
+Do want to submit anyways? (y/n): n
+
+No files were submitted
+

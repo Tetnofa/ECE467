@@ -1,0 +1,9 @@
+sema: 46:4 : mismatched return statement 
+sema: 61:4 : mismatched return statement 
+sema: 67:4 : mismatched return statement 
+sema: 73:8 : mismatched return statement 
+sema: 75:16 : type mismatch 
+sema: 75:8 : mismatched return statement 
+sema: 82:11 : use of undefined identifier undeclaredVar
+sema: 82:4 : mismatched return statement 
+sema: 88:4 : mismatched return statement 

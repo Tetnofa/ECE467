@@ -1,0 +1,239 @@
+
+
+
+
+
+
+// ECE467 STUDENT: implement the visitor classes, perfoming
+// semantic analysis
+
+// void SemanticAnalyzer::visitASTNode(ASTNode* node) {
+//     node->visit()
+//     // Base node visitor - typically empty
+// }
+
+// void SemanticAnalyzer::visitProgramNode(ProgramNode* node) {
+//     prog = node;
+//     for (int i = 0; i < node->getNumChildren(); i++) {
+//         ASTNode* child = node->getChild(i);
+//         visitASTNode(child);
+//     }
+// }
+
+// void SemanticAnalyzer::visitFunctionDeclNode(FunctionDeclNode* node) {
+//     // Check parameters
+//     for (auto param : node->getParams()) {
+//         param->accept(this);
+//     }
+    
+//     // Check body if not a prototype
+//     if (!node->getProto()) {
+//         node->getBody()->accept(this);
+//     }
+// }
+
+// void SemanticAnalyzer::visitParameterNode(ParameterNode* node) {
+//     node->getType()->accept(this);
+//     node->getIdent()->accept(this);
+// }
+
+// void SemanticAnalyzer::visitDeclNode(DeclNode* decl) {
+//     // Base declaration visitor
+// }
+
+// void SemanticAnalyzer::visitScalarDeclNode(ScalarDeclNode* node) {
+//     node->getName()->accept(this);
+//     node->getType()->accept(this);
+// }
+
+// void SemanticAnalyzer::visitArrayDeclNode(ArrayDeclNode* node) {
+//     node->getName()->accept(this);
+    
+//     // Check array size
+//     ArrayTypeNode* arrayType = dynamic_cast<ArrayTypeNode*>(node->getType());
+//     if (arrayType && arrayType->getSize() <= 0) {
+//         addError(SemaError(SemaError::InvalidArraySize,
+//                 node->getLocation(),
+//                 node->getName()->getName()));
+//     }
+// }
+
+// void SemanticAnalyzer::visitExprNode(ExprNode* exp) {
+//     // Base expression visitor
+// }
+
+// void SemanticAnalyzer::visitBinaryExprNode(BinaryExprNode* bin) {
+//     bin->getLeft()->accept(this);
+//     bin->getRight()->accept(this);
+    
+//     std::string op = bin->getOpcode();
+//     if (op == "+" || op == "-" || op == "*" || op == "/") {
+//         if (!bin->getLeft()->getType()->isInt() || !bin->getRight()->getType()->isInt()) {
+//             addError(SemaError(SemaError::TypeMisMatch,
+//                     bin->getLocation(),
+//                     "in arithmetic expression"));
+//         }
+//     } else if (op == "&&" || op == "||") {
+//         if (!bin->getLeft()->getType()->isBool() || !bin->getRight()->getType()->isBool()) {
+//             addError(SemaError(SemaError::TypeMisMatch,
+//                     bin->getLocation(),
+//                     "in logical expression"));
+//         }
+//     } else if (op == "==" || op == "!=" || op == "<" || op == "<=" || op == ">" || op == ">=") {
+//         if (!bin->getLeft()->getType()->equals(bin->getRight()->getType())) {
+//             addError(SemaError(SemaError::TypeMisMatch,
+//                     bin->getLocation(),
+//                     "in comparison"));
+//         }
+//     }
+// }
+
+// void SemanticAnalyzer::visitBoolExprNode(BoolExprNode* boolExpr) {
+//     // Visit the underlying expression
+//     boolExpr->accept(this);
+// }
+
+// void SemanticAnalyzer::visitCallExprNode(CallExprNode* call) {
+//     call->getName()->accept(this);
+    
+//     // Check arguments
+//     for (auto arg : call->getArguments()) {
+//         arg->accept(this);
+//     }
+// }
+
+// void SemanticAnalyzer::visitConstantExprNode(ConstantExprNode* constant) {
+//     // Base constant visitor
+// }
+
+// void SemanticAnalyzer::visitBoolConstantNode(BoolConstantNode* boolConst) {
+//     // Nothing to check for bool constants
+// }
+
+// void SemanticAnalyzer::visitIntConstantNode(IntConstantNode* intConst) {
+//     // Nothing to check for int constants
+// }
+
+// void SemanticAnalyzer::visitIntExprNode(IntExprNode* intExpr) {
+//     // Visit the underlying expression
+//     intExpr->accept(this);
+// }
+
+// void SemanticAnalyzer::visitReferenceExprNode(ReferenceExprNode* ref) {
+//     ref->getIdent()->accept(this);
+    
+//     if (ref->hasIndex()) {
+//         ref->getIndex()->accept(this);
+//         if (!ref->getIndex()->getType()->isInt()) {
+//             addError(SemaError(SemaError::TypeMisMatch,
+//                     ref->getLocation(),
+//                     "array index must be integer"));
+//         }
+//     }
+// }
+
+// void SemanticAnalyzer::visitUnaryExprNode(UnaryExprNode* unary) {
+//     unary->getExpr()->accept(this);
+    
+//     if (unary->getOpcode() == "!") {
+//         if (!unary->getExpr()->getType()->isBool()) {
+//             addError(SemaError(SemaError::TypeMisMatch,
+//                     unary->getLocation(),
+//                     "in logical negation"));
+//         }
+//     } else if (unary->getOpcode() == "-") {
+//         if (!unary->getExpr()->getType()->isInt()) {
+//             addError(SemaError(SemaError::TypeMisMatch,
+//                     unary->getLocation(),
+//                     "in arithmetic negation"));
+//         }
+//     }
+// }
+
+// void SemanticAnalyzer::visitIdentifierNode(IdentifierNode* id) {
+//     // Nothing to check for identifiers at this level
+// }
+
+// void SemanticAnalyzer::visitStmtNode(StmtNode* stmt) {
+//     // Base statement visitor
+// }
+
+// void SemanticAnalyzer::visitAssignStmtNode(AssignStmtNode* assign) {
+//     assign->getTarget()->accept(this);
+//     assign->getValue()->accept(this);
+    
+//     if (!assign->getTarget()->getType()->equals(assign->getValue()->getType())) {
+//         addError(SemaError(SemaError::TypeMisMatch,
+//                 assign->getLocation(),
+//                 "in assignment"));
+//     }
+// }
+
+// void SemanticAnalyzer::visitExprStmtNode(ExprStmtNode* expr) {
+//     expr->getExpr()->accept(this);
+// }
+
+// void SemanticAnalyzer::visitIfStmtNode(IfStmtNode* ifStmt) {
+//     ifStmt->getCondition()->accept(this);
+    
+//     if (!ifStmt->getCondition()->getType()->isBool()) {
+//         addError(SemaError(SemaError::InvalidCond,
+//                 ifStmt->getLocation(),
+//                 "if statement"));
+//     }
+    
+//     ifStmt->getThen()->accept(this);
+    
+//     if (ifStmt->hasElse()) {
+//         ifStmt->getElse()->accept(this);
+//     }
+// }
+
+// void SemanticAnalyzer::visitReturnStmtNode(ReturnStmtNode* ret) {
+//     if (ret->hasReturn()) {
+//         ret->getReturn()->accept(this);
+//     }
+// }
+
+// void SemanticAnalyzer::visitScopeNode(ScopeNode* scope) {
+//     for (auto decl : scope->getDeclarations()) {
+//         decl->accept(this);
+//     }
+    
+//     for (auto stmt : scope->getStatements()) {
+//         stmt->accept(this);
+//     }
+// }
+
+// void SemanticAnalyzer::visitWhileStmtNode(WhileStmtNode* whileStmt) {
+//     whileStmt->getCondition()->accept(this);
+    
+//     if (!whileStmt->getCondition()->getType()->isBool()) {
+//         addError(SemaError(SemaError::InvalidCond,
+//                 whileStmt->getLocation(),
+//                 "while statement"));
+//     }
+    
+//     whileStmt->getBody()->accept(this);
+// }
+
+// void SemanticAnalyzer::visitTypeNode(TypeNode* type) {
+//     // Nothing to check for base type nodes
+// }
+
+// void SemanticAnalyzer::visitPrimitiveTypeNode(PrimitiveTypeNode* type) {
+//     // Nothing to check for primitive types
+// }
+
+// void SemanticAnalyzer::visitArrayTypeNode(ArrayTypeNode* type) {
+//     if (type->getSize() <= 0) {
+//         // Location information might not be available in the type node
+//         addError(SemaError(SemaError::InvalidArraySize,
+//                 std::make_pair(0, 0),
+//                 "array size must be positive"));
+//     }
+// }
+
+// void SemanticAnalyzer::visitArgumentNode(ArgumentNode* arg) {
+//     arg->getExpr()->accept(this);
+// }

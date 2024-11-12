@@ -1,0 +1,42 @@
+sema: 9:13 : type mismatch 
+sema: 9:4 : type mismatch 
+sema: 10:4 : use of undefined identifier z
+sema: 10:4 : type mismatch 
+sema: 11:8 : use of undefined identifier z
+sema: 11:4 : no matching definition for fcn
+sema: 12:4 : use of undefined identifier g
+sema: 12:6 : use of undefined identifier f
+sema: 12:4 : type mismatch 
+sema: 13:4 : use of undefined identifier a
+sema: 13:8 : use of undefined identifier d
+sema: 13:4 : type mismatch 
+sema: 15:0 : redefinition of x
+sema: 20:8 : type mismatch 
+sema: 20:4 : type mismatch 
+sema: 21:4 : no matching definition for fcn
+sema: 27:16 : use of undefined identifier y
+sema: 27:12 : type mismatch 
+sema: 27:4 : type mismatch 
+sema: 27:4 : type mismatch 
+sema: 28:4 : use of undefined identifier b
+sema: 28:8 : use of undefined identifier a
+sema: 28:4 : type mismatch 
+sema: 33:4 : type mismatch 
+sema: 34:4 : type mismatch 
+sema: 35:4 : type mismatch 
+sema: 36:5 : type mismatch 
+sema: 36:4 : type mismatch 
+sema: 37:4 : type mismatch 
+sema: 38:4 : type mismatch 
+sema: 39:4 : use of undefined identifier f
+sema: 39:4 : type mismatch 
+sema: 40:4 : use of undefined identifier b
+sema: 40:8 : use of undefined identifier c
+sema: 40:4 : type mismatch 
+sema: 46:4 : type mismatch 
+sema: 57:4 : type mismatch 
+sema: 58:4 : type mismatch 
+sema: 72:4 : type mismatch 
+sema: 73:4 : type mismatch 
+sema: 74:4 : type mismatch 
+sema: 75:4 : type mismatch 

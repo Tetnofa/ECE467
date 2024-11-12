@@ -1,0 +1,17 @@
+Program [useIO=0](1,0)
+	Function[isProto=0]	Int(1,0)
+		Identifier[name:main](1,4)
+		Scope(1,11)
+			Expression Statement(5,2)
+				Bool Expression(5,2)
+					Binary Expression[opcode:||](5,2)
+						Int Expression(5,3)
+							Binary Expression[opcode:+](5,3)
+								Int Expression(5,3)
+									BoolConstant[val=1](5,3)
+								Int Expression(5,10)
+									BoolConstant[val=0](5,10)
+						Int Expression(5,20)
+							BoolConstant[val=1](5,20)
+sema: 5:3 : type mismatch 
+sema: 5:3 : type mismatch 

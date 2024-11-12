@@ -1,0 +1,5 @@
+sema: 9:4 : type mismatch 
+sema: 12:4 : use of undefined identifier z
+sema: 12:4 : type mismatch 
+sema: 15:8 : type mismatch 
+sema: 15:4 : type mismatch 

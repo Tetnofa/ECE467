@@ -1,0 +1,2 @@
+line 1:0 extraneous input 'sdfsdf' expecting {<EOF>, '#include', 'bool', 'int', 'void'}
+cannot perform semantic checks with parse errors

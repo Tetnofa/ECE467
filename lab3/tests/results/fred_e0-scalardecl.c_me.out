@@ -1,0 +1,3 @@
+sema: 2:0 : redefinition of x
+sema: 6:2 : redefinition of y
+sema: 10:4 : redefinition of z
