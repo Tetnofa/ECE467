@@ -1,0 +1,56 @@
+Submitting assignment 4 from ug156
+Checking for the expected files in the current directory
+smallC.g4 A4Gen.cpp ASTNodes.h ASTNodes.o SemanticAnalyzer.h SemanticAnalyzer.o SymTable.h SymTable.o IRGen.h IRGen.cpp
+Attempting to build your code.  Make output follows:
+==================================================================
+java -jar /cad2/ece467f/ANTLR-4.7.2/antlr-4.7.2-complete.jar -no-listener -visitor -Dlanguage=Cpp  smallC.g4
+g++  -std=c++17 -w -c -I/cad2/ece467f/ANTLR-4.7.2/include/antlr4-runtime/ -I/cad2/ece467f/llvm-project/llvm/include -I/cad2/ece467f/llvm-project/build/include -o A4Gen.o A4Gen.cpp
+g++  -std=c++17 -w -c -I/cad2/ece467f/ANTLR-4.7.2/include/antlr4-runtime/ -I/cad2/ece467f/llvm-project/llvm/include -I/cad2/ece467f/llvm-project/build/include -o ASTVisitorBase.o ASTVisitorBase.cpp
+g++  -std=c++17 -w -c -I/cad2/ece467f/ANTLR-4.7.2/include/antlr4-runtime/ -I/cad2/ece467f/llvm-project/llvm/include -I/cad2/ece467f/llvm-project/build/include -o IRGen.o IRGen.cpp
+g++  -std=c++17 -w -c -I/cad2/ece467f/ANTLR-4.7.2/include/antlr4-runtime/ -I/cad2/ece467f/llvm-project/llvm/include -I/cad2/ece467f/llvm-project/build/include -o smallCLexer.o smallCLexer.cpp
+g++  -std=c++17 -w -c -I/cad2/ece467f/ANTLR-4.7.2/include/antlr4-runtime/ -I/cad2/ece467f/llvm-project/llvm/include -I/cad2/ece467f/llvm-project/build/include -o smallCParser.o smallCParser.cpp
+g++  -std=c++17 -w -c -I/cad2/ece467f/ANTLR-4.7.2/include/antlr4-runtime/ -I/cad2/ece467f/llvm-project/llvm/include -I/cad2/ece467f/llvm-project/build/include -o smallCBaseVisitor.o smallCBaseVisitor.cpp
+g++  -std=c++17 -w -c -I/cad2/ece467f/ANTLR-4.7.2/include/antlr4-runtime/ -I/cad2/ece467f/llvm-project/llvm/include -I/cad2/ece467f/llvm-project/build/include -o smallCVisitor.o smallCVisitor.cpp
+g++  -std=c++17 -w -I/cad2/ece467f/ANTLR-4.7.2/include/antlr4-runtime/ -I/cad2/ece467f/llvm-project/llvm/include -I/cad2/ece467f/llvm-project/build/include \
+                        -L/cad2/ece467f/ANTLR-4.7.2/lib -L/cad2/ece467f/llvm-project/build/lib A4Gen.o ASTVisitorBase.o IRGen.o ASTNodes.o SymTable.o SemanticAnalyzer.o \
+                smallCLexer.o smallCParser.o smallCBaseVisitor.o smallCVisitor.o -o A4Gen -lantlr4-runtime `/cad2/ece467f/llvm-project/build/bin/llvm-config --libs --system-libs support bitwriter core`
+------------------------------------------------------------------
+The build appears to have been successful
+
+Running exercise on the produced executable 'A4Gen'
+############### Testcase 1.sc Results ##########################
+Functionality: PASS - Output matches solution
+############### Testcase 2.sc Results ##########################
+Functionality: PASS - Output matches solution
+############### Testcase 3.sc Results ##########################
+Functionality: PASS - Output matches solution
+############### Testcase 4.sc Results ##########################
+Functionality: PASS - Output matches solution
+################# Summary for 4 test(s) #####################
+Functionality: PASS: All tests passed
+
+The required files passed exercise
+
+Submitting files
+
+Verifying submission
+submitece467f -l 4
+total 267
+-rw-r----- 1 tester tutor   4067 Nov 18 11:42 A4Gen.cpp
+-rw-r----- 1 tester tutor  21520 Nov 18 11:42 ASTNodes.h
+-rw-r----- 1 tester tutor 285064 Nov 18 11:42 ASTNodes.o
+-rw-r----- 1 tester tutor  27036 Nov 18 11:42 IRGen.cpp
+-rw-r----- 1 tester tutor   3113 Nov 18 11:42 IRGen.h
+-rw-r----- 1 tester tutor   3666 Nov 18 11:42 SemanticAnalyzer.h
+-rw-r----- 1 tester tutor 174632 Nov 18 11:42 SemanticAnalyzer.o
+-rw-r----- 1 tester tutor  13100 Nov 18 11:42 smallC.g4
+-rw-r----- 1 tester tutor   1038 Nov 12 01:29 submit_log.1112012902
+-rw-r----- 1 tester tutor   3762 Nov 12 01:29 submit_log.1112012934
+-rw-r----- 1 tester tutor   3931 Nov 17 23:27 submit_log.1117232708
+-rw-r----- 1 tester tutor   1794 Nov 18 11:42 SymTable.h
+-rw-r----- 1 tester tutor 188672 Nov 18 11:42 SymTable.o
+
+All filesizes match. All timestamps match submission time.
+
+Submission was successful
+

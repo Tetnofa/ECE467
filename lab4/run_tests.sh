@@ -44,4 +44,6 @@ for test_file in ./tests/my/*.ll; do
     elif [ ! -s "./tests/diff/${filename}_diff.txt" ]; then
         echo "Test passed for $filename"
     fi
-done 
+done
+
+find ./tests/diff -type f -name '*_diff.txt' -empty -delete
