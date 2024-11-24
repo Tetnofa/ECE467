@@ -1,1 +1,20 @@
-reference error: IR must have exactly one function
+entry: 
+    entry 
+    X
+    entry return 
+    return
+if.else: 
+    entry if.else 
+    entry
+    if.else return 
+    return
+if.then: 
+    entry if.then 
+    entry
+    if.then return 
+    return
+return: 
+    entry return 
+    entry
+    return 
+    X

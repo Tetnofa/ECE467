@@ -1,8 +1,0 @@
-8c8
-<     while.body
----
->     while.cond
-13c13
-<     while.cond
----
->     entry

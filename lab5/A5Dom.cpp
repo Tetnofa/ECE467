@@ -114,7 +114,93 @@ void processFunction(Function &F) {
         }
     } while (changed);
 
-    // Step 7: Output the results
+    // Step 7: Find Immediate Dominators and Post Dominators
+    std::map<BasicBlock*, BasicBlock*> immediatePostDominators;
+    std::map<BasicBlock*, BasicBlock*> immediateDominators; 
+    
+    // Loop through all basic blocks in the dominators map
+    for (auto& entry : dominators) {
+        llvm::BasicBlock* BB = entry.first;
+        std::set<llvm::BasicBlock*> allDominators = entry.second; // Copy of the dominators set
+
+        // Remove the block itself from the dominators set (it can't dominate itself)
+        allDominators.erase(BB);
+
+        // Start with the set of potential dominators (all except the block itself)
+        std::set<llvm::BasicBlock*> potentialDominators = allDominators;
+
+        // Remove dominators that are properly dominated by others in the set
+        for (auto it = potentialDominators.begin(); it != potentialDominators.end();) {
+            llvm::BasicBlock* candidate = *it;
+            bool isImmediateDominator = true;
+
+            // Check if candidate is properly dominated by any other dominator
+            for (auto& otherDom : potentialDominators) {
+                if (candidate != otherDom && dominators[otherDom].count(candidate)) {
+                    // candidate is properly dominated by otherDom, so it's not the immediate dominator
+                    isImmediateDominator = false;
+                    break;
+                }
+            }
+
+            // If candidate is not the immediate dominator, remove it from the set
+            if (!isImmediateDominator) {
+                it = potentialDominators.erase(it);
+            } else {
+                ++it;
+            }
+        }
+
+        // The remaining dominator in potentialDominators is the immediate dominator for BB
+        if (!potentialDominators.empty()) {
+            immediateDominators[BB] = *potentialDominators.begin();  // There should be exactly one immediate dominator
+        } else {
+            immediateDominators[BB] = nullptr;  // No dominator for Entry block
+        }
+    }
+    
+    // Loop through all basic blocks in the post dominators map
+    for (auto& entry : postDominators) {
+        llvm::BasicBlock* BB = entry.first;
+        std::set<llvm::BasicBlock*> allPostDominators = entry.second; // Copy of the post dominators set
+
+        // Remove the block itself from the post dominators set (it can't post dominate itself)
+        allPostDominators.erase(BB);
+
+        // Start with the set of potential post dominators (all except the block itself)
+        std::set<llvm::BasicBlock*> potentialPostDominators = allPostDominators;
+
+        // Remove post dominators that are properly post dominated by others in the set
+        for (auto it = potentialPostDominators.begin(); it != potentialPostDominators.end();) {
+            llvm::BasicBlock* candidate = *it;
+            bool isImmediatePostDominator = true;
+
+            // Check if candidate is properly post dominated by any other post dominator
+            for (auto& otherPostDom : potentialPostDominators) {
+                if (candidate != otherPostDom && postDominators[otherPostDom].count(candidate)) {
+                    // candidate is properly post dominated by otherPostDom, so it's not the immediate post dominator
+                    isImmediatePostDominator = false;
+                    break;
+                }
+            }
+
+            // If candidate is not the immediate post dominator, remove it from the set
+            if (!isImmediatePostDominator) {
+                it = potentialPostDominators.erase(it);
+            } else {
+                ++it;
+            }
+        }
+
+        // The remaining post dominator in potentialPostDominators is the immediate post dominator for BB
+        if (!potentialPostDominators.empty()) {
+            immediatePostDominators[BB] = *potentialPostDominators.begin();  // There should be exactly one immediate post dominator
+        } else {
+            immediatePostDominators[BB] = nullptr;  // No post dominator for Exit block
+        }
+    }
+
+    // Step 8: Output the results
     std::vector<BasicBlock*> blocks;
     for (BasicBlock &BB : F) {
         blocks.push_back(&BB);
@@ -123,6 +209,7 @@ void processFunction(Function &F) {
         return a->getName() < b->getName();
     });
 
+    // Now output the results
     for (BasicBlock* BB : blocks) {
         // Print the block name
         llvm::outs() << BB->getName() << ": \n";
@@ -145,10 +232,10 @@ void processFunction(Function &F) {
         llvm::outs() << " \n"; // New line after dominators
 
         // Print immediate dominator
-        if (domNames.size() > 1) {
-            llvm::outs() << "    " << domNames[1] << "\n"; // Immediate dominator (first after itself)
+        if (immediateDominators[BB]) {
+            llvm::outs() << "    " << immediateDominators[BB]->getName() << "\n";
         } else {
-            llvm::outs() << "    X\n"; // No immediate dominator
+            llvm::outs() << "    X\n"; // No unique immediate dominator
         }
 
         // Print post-dominators
@@ -169,10 +256,10 @@ void processFunction(Function &F) {
         llvm::outs() << " \n"; // New line after post-dominators
 
         // Print immediate post-dominator
-        if (postDomNames.size() > 1) {
-            llvm::outs() << "    " << postDomNames[1] << "\n"; // Immediate post-dominator (first after itself)
+        if (immediatePostDominators[BB]) {
+            llvm::outs() << "    " << immediatePostDominators[BB]->getName() << "\n";
         } else {
-            llvm::outs() << "    X\n"; // No immediate post-dominator
+            llvm::outs() << "    X\n"; // No unique immediate post-dominator
         }
     }
 }

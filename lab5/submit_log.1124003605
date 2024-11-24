@@ -1,0 +1,53 @@
+Submitting assignment 5 from ug141
+Checking for the expected files in the current directory
+A5Dom.cpp
+Attempting to build your code.  Make output follows:
+==================================================================
+-- The C compiler identification is GNU 12.2.0
+-- The CXX compiler identification is GNU 12.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Performing Test Terminfo_LINKABLE
+-- Performing Test Terminfo_LINKABLE - Success
+-- Found Terminfo: /usr/lib/x86_64-linux-gnu/libtinfo.so  
+-- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.2.13")  
+-- Found zstd: /usr/lib/x86_64-linux-gnu/libzstd.so  
+-- Found LibXml2: /usr/lib/x86_64-linux-gnu/libxml2.so (found version "2.9.14") 
+-- Configuring done (0.4s)
+-- Generating done (0.0s)
+-- Build files have been written to: /tmp/fDMhJkawRh
+[ 50%] Building CXX object CMakeFiles/A5Dom.dir/A5Dom.cpp.o
+[100%] Linking CXX shared library libA5Dom.so
+[100%] Built target A5Dom
+------------------------------------------------------------------
+The build appears to have been successful
+
+Running exercise on the produced executable 'libA5Dom.so'
+############### Testcase 1.ll Results ##########################
+Functionality: PASS - Output matches solution
+############### Testcase 2.ll Results ##########################
+Functionality: PASS - Output matches solution
+################# Summary for 2 test(s) #####################
+Functionality: PASS: All tests passed
+
+The required files passed exercise
+
+Submitting files
+
+Verifying submission
+submitece467f -l 5
+total 1
+-rw-r----- 1 tester tutor 11779 Nov 24 00:36 A5Dom.cpp
+
+All filesizes match. All timestamps match submission time.
+
+Submission was successful
+

@@ -1,1 +1,80 @@
-reference error: IR must have exactly one function
+entry: 
+    entry 
+    X
+    entry if.end37 
+    if.end37
+if.end: 
+    entry if.end if.then land.end while.body while.cond while.cond2 while.cond8 while.end while.end15 
+    while.end15
+    if.end if.end37 while.cond while.end26 
+    while.cond
+if.end37: 
+    entry if.end37 
+    entry
+    if.end37 
+    X
+if.then: 
+    entry if.then 
+    entry
+    if.end37 if.then while.cond while.end26 
+    while.cond
+if.then17: 
+    entry if.then if.then17 land.end while.body while.cond while.cond2 while.cond8 while.end while.end15 
+    while.end15
+    if.end if.end37 if.then17 while.cond while.end26 
+    if.end
+land.end: 
+    entry if.then land.end while.body while.cond while.cond2 
+    while.cond2
+    if.end if.end37 land.end while.cond while.cond8 while.end while.end15 while.end26 
+    while.end
+land.rhs: 
+    entry if.then land.rhs while.body while.cond while.cond2 
+    while.cond2
+    if.end if.end37 land.end land.rhs while.cond while.cond8 while.end while.end15 while.end26 
+    land.end
+while.body: 
+    entry if.then while.body while.cond 
+    while.cond
+    if.end if.end37 land.end while.body while.cond while.cond2 while.cond8 while.end while.end15 while.end26 
+    while.cond2
+while.body14: 
+    entry if.then land.end while.body while.body14 while.cond while.cond2 while.cond8 while.end 
+    while.cond8
+    if.end if.end37 while.body14 while.cond while.cond8 while.end15 while.end26 
+    while.cond8
+while.body7: 
+    entry if.then land.end while.body while.body7 while.cond while.cond2 
+    land.end
+    if.end if.end37 land.end while.body7 while.cond while.cond2 while.cond8 while.end while.end15 while.end26 
+    while.cond2
+while.cond: 
+    entry if.then while.cond 
+    if.then
+    if.end37 while.cond while.end26 
+    while.end26
+while.cond2: 
+    entry if.then while.body while.cond while.cond2 
+    while.body
+    if.end if.end37 land.end while.cond while.cond2 while.cond8 while.end while.end15 while.end26 
+    land.end
+while.cond8: 
+    entry if.then land.end while.body while.cond while.cond2 while.cond8 while.end 
+    while.end
+    if.end if.end37 while.cond while.cond8 while.end15 while.end26 
+    while.end15
+while.end: 
+    entry if.then land.end while.body while.cond while.cond2 while.end 
+    land.end
+    if.end if.end37 while.cond while.cond8 while.end while.end15 while.end26 
+    while.cond8
+while.end15: 
+    entry if.then land.end while.body while.cond while.cond2 while.cond8 while.end while.end15 
+    while.cond8
+    if.end if.end37 while.cond while.end15 while.end26 
+    if.end
+while.end26: 
+    entry if.then while.cond while.end26 
+    while.cond
+    if.end37 while.end26 
+    if.end37
