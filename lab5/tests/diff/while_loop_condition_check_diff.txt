@@ -1,0 +1,33 @@
+1,30c1
+< entry: 
+<     entry 
+<     X
+<     entry while.cond 
+<     while.cond
+< merge: 
+<     entry merge while.body while.cond 
+<     merge
+<     merge while.cond 
+<     while.cond
+< then: 
+<     entry then while.body while.cond 
+<     then
+<     then 
+<     X
+< while.body: 
+<     entry while.body while.cond 
+<     while.body
+<     while.body 
+<     X
+< while.cond: 
+<     entry while.cond 
+<     while.cond
+<     while.cond 
+<     X
+< while.exit: 
+<     entry while.cond while.exit 
+<     while.cond
+<     while.exit 
+<     X
+---
+> reference error: there must be exactly one exit BB

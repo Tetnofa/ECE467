@@ -1,0 +1,30 @@
+entry: 
+    entry 
+    X
+    entry merge while.cond while.exit 
+    merge
+merge: 
+    entry merge 
+    merge
+    merge while.cond while.exit 
+    while.cond
+then: 
+    entry then 
+    then
+    merge then while.cond while.exit 
+    then
+while.body: 
+    entry merge while.body while.cond 
+    merge
+    while.body while.cond while.exit 
+    while.cond
+while.cond: 
+    entry merge while.cond 
+    merge
+    while.cond while.exit 
+    while.exit
+while.exit: 
+    entry merge while.cond while.exit 
+    merge
+    while.exit 
+    X

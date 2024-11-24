@@ -1,0 +1,35 @@
+entry: 
+    entry 
+    X
+    entry merge 
+    merge
+merge: 
+    entry merge 
+    entry
+    merge 
+    X
+merge2: 
+    entry merge2 then 
+    then
+    merge merge2 
+    merge
+merge4: 
+    entry merge4 then then1 
+    then1
+    merge merge2 merge4 
+    merge2
+then: 
+    entry then 
+    entry
+    merge merge2 then 
+    merge2
+then1: 
+    entry then then1 
+    then
+    merge merge2 merge4 then1 
+    merge4
+then3: 
+    entry then then1 then3 
+    then1
+    merge merge2 merge4 then3 
+    merge4

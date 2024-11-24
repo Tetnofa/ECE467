@@ -1,0 +1,38 @@
+1,35c1
+< else: 
+<     else entry while.body while.cond 
+<     entry
+<     else merge while.cond while.exit 
+<     merge
+< entry: 
+<     entry 
+<     X
+<     entry while.cond while.exit 
+<     while.cond
+< merge: 
+<     entry merge while.body while.cond 
+<     merge
+<     merge while.cond while.exit 
+<     while.cond
+< then: 
+<     entry then while.body while.cond 
+<     then
+<     merge then while.cond while.exit 
+<     then
+< while.body: 
+<     entry while.body while.cond 
+<     while.body
+<     merge while.body while.cond while.exit 
+<     while.body
+< while.cond: 
+<     entry while.cond 
+<     while.cond
+<     while.cond while.exit 
+<     while.exit
+< while.exit: 
+<     entry while.cond while.exit 
+<     while.cond
+<     while.exit 
+<     X
+---
+> reference error: IR must have exactly one function

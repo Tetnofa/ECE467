@@ -1,0 +1,20 @@
+else: 
+    else entry 
+    entry
+    else merge 
+    merge
+entry: 
+    entry 
+    X
+    entry merge 
+    merge
+merge: 
+    entry merge 
+    merge
+    merge 
+    X
+then: 
+    entry then 
+    then
+    merge then 
+    then

@@ -1,0 +1,35 @@
+entry: 
+    entry 
+    X
+    entry while.cond while.exit 
+    while.cond
+while.body: 
+    entry while.body while.cond 
+    while.body
+    while.body while.cond while.cond1 while.exit while.exit3 
+    while.cond
+while.body2: 
+    entry while.body while.body2 while.cond while.cond1 
+    while.body
+    while.body2 while.cond while.cond1 while.exit while.exit3 
+    while.cond
+while.cond: 
+    entry while.cond 
+    while.cond
+    while.cond while.exit 
+    while.exit
+while.cond1: 
+    entry while.body while.cond while.cond1 
+    while.body
+    while.cond while.cond1 while.exit while.exit3 
+    while.cond1
+while.exit: 
+    entry while.cond while.exit 
+    while.cond
+    while.exit 
+    X
+while.exit3: 
+    entry while.body while.cond while.cond1 while.exit3 
+    while.body
+    while.cond while.exit while.exit3 
+    while.exit

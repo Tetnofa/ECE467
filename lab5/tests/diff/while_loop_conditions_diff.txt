@@ -1,0 +1,28 @@
+8c8
+<     while.body
+---
+>     while.cond
+13c13
+<     while.body2
+---
+>     while.cond1
+18c18
+<     while.cond
+---
+>     entry
+20c20
+<     while.cond1
+---
+>     while.exit
+23c23
+<     while.cond
+---
+>     while.exit
+30c30
+<     while.exit
+---
+>     while.cond1
+33c33
+<     while.cond
+---
+>     while.cond1

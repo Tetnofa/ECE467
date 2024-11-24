@@ -1,0 +1,48 @@
+1,45c1
+< entry: 
+<     entry 
+<     X
+<     entry while.cond 
+<     while.cond
+< merge: 
+<     entry merge while.body while.body3 while.cond while.cond2 
+<     merge
+<     merge while.cond2 
+<     while.cond2
+< then: 
+<     entry then while.body while.body3 while.cond while.cond2 
+<     then
+<     then 
+<     X
+< while.body: 
+<     entry while.body while.cond 
+<     while.body
+<     while.body while.cond2 
+<     while.cond2
+< while.body3: 
+<     entry while.body while.body3 while.cond while.cond2 
+<     while.body
+<     while.body3 
+<     X
+< while.cond: 
+<     entry while.cond 
+<     while.cond
+<     while.cond 
+<     X
+< while.cond2: 
+<     entry while.body while.cond while.cond2 
+<     while.body
+<     while.cond2 
+<     X
+< while.exit: 
+<     entry while.cond while.exit 
+<     while.cond
+<     while.exit 
+<     X
+< while.exit4: 
+<     entry while.body while.cond while.cond2 while.exit4 
+<     while.body
+<     while.cond while.exit4 
+<     while.exit4
+---
+> reference error: there must be exactly one exit BB

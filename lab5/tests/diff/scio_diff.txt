@@ -1,0 +1,2 @@
+0a1
+> reference error: IR must have exactly one function

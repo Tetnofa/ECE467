@@ -1,0 +1,8 @@
+1,5c1
+< entry: 
+<     entry 
+<     X
+<     entry 
+<     X
+---
+> reference error: IR must have exactly one function
